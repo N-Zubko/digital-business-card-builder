@@ -1,12 +1,12 @@
 # REACT BUSINESS CARD BUILDER
 
-The project is based on [Scrimba](https://scrimba.com/learn/learnreact) React course with a function to customize the business card directly in the browser and save the result.
+The Digital Business Card Builder helps users to build and customize a business card directly in the browser and save the result as a pdf. The idea is based on [Scrimba](https://scrimba.com/learn/learnreact) React course.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Built with
 
+- Mobile-first approach
 - Semantic HTML5
 - CSS flexbox
-- Mobile-first workflow
 - [React.js](https://reactjs.org/)
+- Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
