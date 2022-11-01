@@ -1,15 +1,22 @@
+import { useState } from 'react';
 import styles from './Board.module.css';
 
 export default function Board() {
-  let value = '#e66465';
+  const [color, setColor] = useState('#008cb4');
 
   return (
     <div className={styles.container}>
       <h2>Board</h2>
       <form>
         <p>Choose your profile picture background color:</p>
-        <input type="color" id="head" name="head" value={value} />
-        <label for="head">Head</label>
+        <input
+          type="color"
+          id="profile-picture-background"
+          name="profile-picture-background"
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+        />
+        <label htmlFor="head">Head</label>
         <p>Add a file</p>
         <input
           type="file"
@@ -17,6 +24,9 @@ export default function Board() {
           name="avatar"
           accept="image/png, image/jpeg"
         ></input>
+        <p>Audio settings:</p>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+        <label htmlFor="volume">Volume</label>
       </form>
     </div>
   );
