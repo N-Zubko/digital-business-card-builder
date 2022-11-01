@@ -15,7 +15,11 @@ export default function Info() {
         <p className={styles.title} style={{ color: `${titleColor}` }}>
           {userTitle}
         </p>
-        <p className={styles.small}>{website}</p>
+        <p className={styles.small}>
+          <a target="_blank" rel="noopener noreferrer" href={website}>
+            {website}
+          </a>
+        </p>
         <div className={styles.contacts}>
           <a
             target="_blank"
