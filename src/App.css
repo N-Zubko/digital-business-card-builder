@@ -4,4 +4,5 @@
   flex-wrap: wrap;
   place-items: center;
   text-align: center;
+  gap: 2%;
 }
