@@ -2,7 +2,8 @@
   background-color: blueviolet;
   color: white;
   padding: 5%;
-  margin: 5%;
+  margin: 2% auto;
+  border-radius: 10%;
 }
 
 input,

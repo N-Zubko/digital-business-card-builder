@@ -3,4 +3,5 @@
   flex-direction: column;
   flex-wrap: nowrap;
   place-items: center;
+  margin: 2% auto;
 }
