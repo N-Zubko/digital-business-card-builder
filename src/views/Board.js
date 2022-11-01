@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Board.module.css';
 
 export default function Board() {
-  const [color, setColor] = useState('#008cb4');
+  const [profilePictureBGcolor, setProfilePictureBGcolor] = useState('#008cb4');
 
   return (
     <div className={styles.container}>
@@ -13,8 +13,8 @@ export default function Board() {
           type="color"
           id="profile-picture-background"
           name="profile-picture-background"
-          value={color}
-          onChange={(e) => setColor(e.target.value)}
+          value={profilePictureBGcolor}
+          onChange={(e) => setProfilePictureBGcolor(e.target.value)}
         />
         <label htmlFor="head">Head</label>
         <p>Add a file</p>
