@@ -4,8 +4,12 @@ import { UserContext } from '../utils/Context';
 import styles from './Board.module.css';
 
 export default function Board() {
-  const { profilePictureBGcolor, setProfilePictureBGcolor } =
-    useContext(UserContext);
+  const {
+    profilePictureBGcolor,
+    setProfilePictureBGcolor,
+    userName,
+    setUserName,
+  } = useContext(UserContext);
   const { titleColor, setTitleColor } = useContext(UserContext);
   return (
     <div className={styles.container}>
@@ -20,6 +24,16 @@ export default function Board() {
           onChange={(e) => setProfilePictureBGcolor(e.target.value)}
         />
         <label htmlFor="title-color">Profile picture background</label>
+        <br />
+        <input
+          id="user-name"
+          name="user-name"
+          type="text"
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+        />
+        <label htmlFor="user-name">Name</label>
+        <br />
         <input
           type="color"
           id="title-color"
