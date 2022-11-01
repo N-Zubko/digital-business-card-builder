@@ -8,4 +8,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Semantic HTML5
 - CSS flexbox
-- Mobile-first workflow -[React.js](https://reactjs.org/)
+- Mobile-first workflow
+- [React.js](https://reactjs.org/)
