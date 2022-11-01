@@ -7,7 +7,7 @@ export default function Board() {
     <div className={styles.container}>
       <h2>Board</h2>
       <form>
-        <p>Choose your monster's color:</p>
+        <p>Choose your profile picture background color:</p>
         <input type="color" id="head" name="head" value={value} />
         <label for="head">Head</label>
         <p>Add a file</p>
