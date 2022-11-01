@@ -3,3 +3,7 @@
   color: white;
   padding: 10%;
 }
+
+label {
+  margin: 0 5px;
+}
