@@ -10,6 +10,13 @@ export default function Board() {
         <p>Choose your monster's color:</p>
         <input type="color" id="head" name="head" value={value} />
         <label for="head">Head</label>
+        <p>Add a file</p>
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        ></input>
       </form>
     </div>
   );
