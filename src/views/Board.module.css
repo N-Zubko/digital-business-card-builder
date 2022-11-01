@@ -5,6 +5,7 @@
   margin: 5%;
 }
 
+input,
 label {
-  margin: 0 5px;
+  margin: 5px;
 }
