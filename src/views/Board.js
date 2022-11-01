@@ -43,7 +43,7 @@ export default function Board() {
           value={titleColor}
           onChange={(e) => setTitleColor(e.target.value)}
         />
-        <label htmlFor="head">Title color</label>
+        <label htmlFor="head">Title colour</label>
         <br />
         <input
           id="user-title"
