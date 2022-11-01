@@ -61,9 +61,9 @@ export default function Board() {
           name="avatar"
           accept="image/png, image/jpeg"
         ></input>
-        <p>Audio settings:</p>
+        <p>Size settings:</p>
         <input type="range" id="volume" name="volume" min="0" max="11" />
-        <label htmlFor="volume">Volume</label>
+        <label htmlFor="volume">Size</label>
       </form>
     </div>
   );
