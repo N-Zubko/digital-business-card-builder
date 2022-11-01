@@ -7,7 +7,7 @@ import Canvas from './views/Canvas';
 import samplePicture from './assets/Profile_Picture.png';
 
 export default function App() {
-  const [profilePictureBGcolor, setProfilePictureBGcolor] = useState('#D93FA1');
+  const [profilePictureBGcolor, setProfilePictureBGcolor] = useState('#A48498');
   const [userName, setUserName] = useState('Type in Name');
   const [userTitle, setUserTitle] = useState('Type in Your Title');
   const [website, setWebsite] = useState('Type in Website');
