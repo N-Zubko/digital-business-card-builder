@@ -1,5 +1,9 @@
 .container {
-  background-color: blueviolet;
+  background: linear-gradient(
+    240deg,
+    rgba(173, 31, 231, 0.9) 35%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
   color: white;
   padding: 5%;
   margin: 2% auto;
