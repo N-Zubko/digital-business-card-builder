@@ -2,6 +2,7 @@
 
 Digital Business Card Builder helps users to build and customize business cards directly in the browser and save the result as a pdf. The idea is based on [Scrimba](https://scrimba.com/learn/learnreact) React course.
 
+🚧 WIP 🚧 More announced features to be added
 
 ## Built with
 
