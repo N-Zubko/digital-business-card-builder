@@ -1,14 +1,17 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { UserContext } from '../utils/Context';
+
 import styles from './Board.module.css';
 
 export default function Board() {
-  const [profilePictureBGcolor, setProfilePictureBGcolor] = useState('#008cb4');
-
+  const { profilePictureBGcolor, setProfilePictureBGcolor } =
+    useContext(UserContext);
+  const { titleColor, setTitleColor } = useContext(UserContext);
   return (
     <div className={styles.container}>
       <h2>Board</h2>
       <form>
-        <p>Choose your profile picture background color:</p>
+        <p>Choose your color:</p>
         <input
           type="color"
           id="profile-picture-background"
@@ -16,7 +19,15 @@ export default function Board() {
           value={profilePictureBGcolor}
           onChange={(e) => setProfilePictureBGcolor(e.target.value)}
         />
-        <label htmlFor="head">Head</label>
+        <label htmlFor="title-color">Profile picture background</label>
+        <input
+          type="color"
+          id="title-color"
+          name="title-color"
+          value={titleColor}
+          onChange={(e) => setTitleColor(e.target.value)}
+        />
+        <label htmlFor="head">Title</label>
         <p>Add a file</p>
         <input
           type="file"
