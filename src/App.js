@@ -1,16 +1,12 @@
 import './App.css';
-import Info from './components/Info';
-import About from './components/About';
-import Interest from './components/Interest';
-import Footer from './components/Footer';
+import Board from './views/Board';
+import Canvas from './views/Canvas';
 
 export default function App() {
   return (
     <div className="App">
-      <Info />
-      <About />
-      <Interest />
-      <Footer />
+      <Board />
+      <Canvas />
     </div>
   );
 }
