@@ -9,13 +9,15 @@ export default function Board() {
     setProfilePictureBGcolor,
     userName,
     setUserName,
+    setUserTitle,
+    userTitle,
   } = useContext(UserContext);
   const { titleColor, setTitleColor } = useContext(UserContext);
   return (
     <div className={styles.container}>
-      <h2>Board</h2>
+      <h2>Dashboard</h2>
       <form>
-        <p>Choose your color:</p>
+        <p>Fill out fields and select colours:</p>
         <input
           type="color"
           id="profile-picture-background"
@@ -41,7 +43,17 @@ export default function Board() {
           value={titleColor}
           onChange={(e) => setTitleColor(e.target.value)}
         />
-        <label htmlFor="head">Title</label>
+        <label htmlFor="head">Title color</label>
+        <br />
+        <input
+          id="user-title"
+          name="user-title"
+          type="text"
+          value={userTitle}
+          onChange={(e) => setUserTitle(e.target.value)}
+        />
+        <label htmlFor="user-title">Name</label>
+        <br />
         <p>Add a file</p>
         <input
           type="file"
