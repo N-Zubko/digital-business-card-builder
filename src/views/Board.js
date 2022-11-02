@@ -52,7 +52,7 @@ export default function Board() {
           value={userTitle}
           onChange={(e) => setUserTitle(e.target.value)}
         />
-        <label htmlFor="user-title">Name</label>
+        <label htmlFor="user-title">Title</label>
         <br />
         <p>Add a file</p>
         <input
